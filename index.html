@@ -73,16 +73,7 @@
             z-index: 1;
             border-radius: 10px;
         }
-
-        @keyframes light {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
+        
 
         form {
             display: flex;
@@ -100,15 +91,12 @@
                 inset 3px 3px 6px rgb(238, 129, 238, 0.4),
                 2px 2px 20px 1px rgba(186, 127, 253, 0.1);
             padding:2%;
-            /* padding-bottom: px; */
-
         }
         .a{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             margin: 0%;
-            /* border-radius: 8px; */
         }
 
         .formdesign {
@@ -194,9 +182,9 @@
             display: block;
             transform: translateY(12px);
         }
-        @media (max-width:500px){
-        .box {
-            background-color: black
+        h2{
+            color: aliceblue;
+            font-size: larger;
         }
         .form{
             display:flex;
@@ -238,12 +226,27 @@
             padding: 0px 4px;
         }
         }
+        /*    THIS IS FOR THE ANIMATION(ROTATING) OF THE CIRCLES IN THE BACKGOUND      */
+
+        @keyframes light {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+/*  FROM HERE MEDIA QUERIES FOR RESPOSIVENESS */
+        @media (max-width:500px){
+        .box {
+            background-color: black
+        }
         @media (max-height:550px){
             input{
                 max-height: 15px;
             }
             .a{
-                /* flex-shrink: 1; */
                 padding: 0%;
                 margin: 0%;
             }
@@ -251,8 +254,7 @@
 
         @media (max-height:525px){
         .box{
-            display: flex;
-            /* background-color: black */
+            display: flex;  
         }
 
         .box::before {
@@ -273,7 +275,6 @@
         form{
             min-height: 350px;
             max-height:480px;
-            /* padding-right: 30px; */
             padding-bottom: 20px;
         }
         input{
@@ -308,13 +309,8 @@
             grid-column-start:1;
             grid-column-end: 3;
             width: 100%;
-            /* background-color: aliceblue; */
         }
         }
-
-
-
-
 
         @media (max-height:395px){
         .form{
@@ -322,7 +318,6 @@
         }
         .box{
             display: flex;
-            /* background-color: black */
         }
 
         .box::before {
@@ -372,17 +367,14 @@
         }
         .formdesign{
             margin: 0%;
-            /* display: grid; */
         }
         #username{
             grid-column-start:1;
             grid-column-end: 4;
-            /* background-color: aliceblue; */
             min-width: 100%;
         }
         .btt{
             min-height: 50px;
-            /* background-color: aliceblue; */
             justify-content: space-evenly;
         }
         #submit{
@@ -390,10 +382,7 @@
             margin-bottom: 25px;
         }
         }
-        h2{
-            color: aliceblue;
-            font-size: larger;
-        }
+    
     </style>
 </head>
 
