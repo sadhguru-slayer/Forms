@@ -183,7 +183,7 @@ input {
 @media (max-width:500px){
 .box {
     background-color: black;
-   height:130vh;
+   height:150vh;
 }
 .form{
     display:flex;
@@ -239,7 +239,7 @@ h3{
 @media (max-height:525px)(max-width:750px){
 .box{
     display: flex;
-    height:130vh
+    min-height:150vh
 }
 
 .box::before {
@@ -303,7 +303,7 @@ h3{
 }
 .box{
     display: flex;
-height:130vh
+min-height:150vh
 }
 
 .box::before {
