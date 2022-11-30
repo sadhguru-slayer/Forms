@@ -188,7 +188,7 @@ input {
 .form{
     display:flex;
     justify-content: center;
-    align-items:flex-start;
+    align-items:center;
 }
 
 .box::before {
@@ -207,8 +207,6 @@ input {
     border-radius: 2rem;
 }
 form{
-    position: absolute;
-    top: 20px;
     min-width: 330px;
     min-height:300px;
     max-height:600px;
@@ -279,6 +277,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height:150vh
 }
 .btt{
     display: flex;
@@ -363,6 +362,8 @@ h3{
     min-height: 50px;
     justify-content: space-evenly;
 }
+.form{
+    min-height:150vh}
 #submit{
     margin-top: 0%;
     margin-bottom: 25px;
