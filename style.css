@@ -236,11 +236,11 @@ h3{
     }
 }
 
-@media (max-height:525px)(max-width:750px){
+@media (max-height:525px)(max-width:950px){
 .box{
     display: flex;
-min-height:10vh;
-    max-height:150vh;
+min-height:100vh;
+    max-height:130vh;
 }
 
 .box::before {
@@ -259,9 +259,10 @@ min-height:10vh;
     border-radius: 2rem;
 }
 form{
+    position: absolute;
+    bottom:0px;
     min-height: 350px;
     max-height:480px;
-
     padding-bottom: 20px;
 }
 input{
@@ -299,7 +300,7 @@ h3{
     width: 100%;
 }
 }
-@media (max-height:395px)(max-width:750px){
+@media (max-height:605px)(max-width:950px){
 .form{
     align-items: center;
 }
@@ -324,7 +325,8 @@ max-height:150vh;
     border-radius: 2rem;
 }
 form{
-    position: none;
+    position: absolute;
+    bottom:0px;
     display: flex;
     justify-content: center;
     align-items: center;
