@@ -182,7 +182,8 @@ input {
 /* -------MEDIAQUIERIES STARTS FROM HERE FOR RESPONSIVENESS --------------*/
 @media (max-width:500px){
 .box {
-    background-color: black
+    background-color: black;
+   height:130vh;
 }
 .form{
     display:flex;
@@ -238,7 +239,7 @@ h3{
 @media (max-height:525px)(max-width:750px){
 .box{
     display: flex;
-    
+    height:130vh
 }
 
 .box::before {
@@ -302,7 +303,7 @@ h3{
 }
 .box{
     display: flex;
-
+height:130vh
 }
 
 .box::before {
