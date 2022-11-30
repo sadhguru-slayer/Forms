@@ -109,15 +109,12 @@ form {
 h3 {
     position: absolute;
     pointer-events: none;
-    transition: 0.5s;
-    color: black;
-    border-radius: 3px;
-    background-color: rgb(238, 129, 238);
+    transition: 0.5s ease-in-out;
+    color: #dddddd;
+    border-radius: 8px;
+    background-color:#dddddb;
     z-index: 4;
     font-size: medium;
-    box-shadow: 1px 1px 1px rgb(58, 31, 58),
-        inset -1px -1px 2px rgb(58, 31, 58),
-        inset 2px 2px 4px rgb(216, 185, 216);
     padding: 0px 7px;
 }
 h2{
@@ -131,12 +128,11 @@ input {
     font-weight: bolder;
     font-size: medium;
     margin-top: 12px;
-    background: rgb(238, 129, 238);
     width: 300px;
     height: 2px;
     color: rgb(62, 62, 62);
     z-index: 3;
-    border-radius: 4px;
+    border-radius:10px;
     transition: 0.5s;
 }
 
