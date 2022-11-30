@@ -11,7 +11,7 @@
 .box {
     position: relative;
     width: 100%;
-    min-height: 190vh;
+    min-height: 160vh;
     background-color: rgb(33, 32, 32);
     overflow: hidden;
     display: flex;
@@ -207,6 +207,8 @@ input {
     border-radius: 2rem;
 }
 form{
+position:absolute;
+bottom:80px;
     min-width: 330px;
     min-height:300px;
     max-height:600px;
@@ -237,7 +239,8 @@ h3{
 @media (max-height:525px)(max-width:750px){
 .box{
     display: flex;
-    min-height:150vh
+min-height:10vh;
+    max-height:150vh;
 }
 
 .box::before {
@@ -302,7 +305,7 @@ h3{
 }
 .box{
     display: flex;
-min-height:150vh
+max-height:150vh;
 }
 
 .box::before {
@@ -321,7 +324,7 @@ min-height:150vh
     border-radius: 2rem;
 }
 form{
-    position: fixed;
+    position: none;
     display: flex;
     justify-content: center;
     align-items: center;
