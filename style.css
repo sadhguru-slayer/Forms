@@ -131,6 +131,7 @@ input {
     width: 300px;
     height: 2px;
     color: rgb(62, 62, 62);
+    background: rgb(238, 129, 238);
     z-index: 3;
     border-radius:10px;
     transition: 0.5s;
