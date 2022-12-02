@@ -228,9 +228,10 @@ h3{
 }
 
 
-@media (max-height:775px),(min-width:780px){
+@media (max-height:605px),(min-width:880px){
 .form{
     align-items: center;
+   justify-content:center;
 }
 .box{
     display: flex;
