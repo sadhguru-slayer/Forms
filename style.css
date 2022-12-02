@@ -12,7 +12,7 @@
     position: relative;
     width: 100%;
     max-height: 160vh;
-height:110vh
+min-height:110vh
     background-color: rgb(33, 32, 32);
     overflow: hidden;
     display: flex;
