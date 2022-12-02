@@ -184,7 +184,7 @@ input {
 @media (max-width:500px){
 .box {
     background-color: black;
-    max-height:140vh;
+    
 }
 .form{
     display:flex;
