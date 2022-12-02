@@ -209,7 +209,7 @@ input {
 }
 form{
 position:absolute;
-top:-30px;
+top:-10px;
     min-width: 330px;
     min-height:300px;
     max-height:600px;
