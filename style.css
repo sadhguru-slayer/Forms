@@ -237,71 +237,8 @@ h3{
     }
 }
 
-@media (max-height:525px)(max-width:950px){
-.box{
-    display: flex;
-    max-height:130vh;
-    min-height:100vh;
-}
 
-.box::before {
-    top: -10%;
-    right: 50%;
-    height:30rem;
-    width: 30rem;
-    border-radius: 15rem;
-}
-
-.box::after {
-    top: -10%;
-    right: 50rem;
-    width: 30rem;
-    height: 30rem;
-    border-radius: 2rem;
-}
-form{
-    position: absolute;
-    bottom:0px;
-    min-height: 350px;
-    max-height:480px;
-    padding-bottom: 20px;
-}
-input{
-    min-width: 300px;
-    max-width: 300px;
-    min-height: 2px;
-    max-height: 10px;
-}
-h3{
-    padding: 0px 4px;
-}
-.formdesign{
-    margin: 12px;   
-}
-.form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height:150vh
-}
-.btt{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4px;
-}
-#submit{
-    margin-top:0% ;
-}
-#lable,#username{
-    grid-column-start:1;
-    grid-column-end: 3;
-    width: 100%;
-}
-}
-@media (max-height:605px)(max-width:950px){
+@media (max-height:775px)(min-width:780px){
 .form{
     align-items: center;
 }
