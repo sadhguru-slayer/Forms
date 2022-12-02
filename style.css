@@ -11,7 +11,8 @@
 .box {
     position: relative;
     width: 100%;
-    min-height: 160vh;
+    max-height: 160vh;
+height:110vh
     background-color: rgb(33, 32, 32);
     overflow: hidden;
     display: flex;
@@ -183,7 +184,7 @@ input {
 @media (max-width:500px){
 .box {
     background-color: black;
-   height:150vh;
+    max-height:140vh;
 }
 .form{
     display:flex;
@@ -239,8 +240,8 @@ h3{
 @media (max-height:525px)(max-width:950px){
 .box{
     display: flex;
-min-height:100vh;
     max-height:130vh;
+    min-height:100vh;
 }
 
 .box::before {
@@ -306,7 +307,7 @@ h3{
 }
 .box{
     display: flex;
-max-height:150vh;
+    min-height:110vh;
 }
 
 .box::before {
