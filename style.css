@@ -230,6 +230,7 @@ h3{
 
 @media (min-width:700px),(max-height:605){
 .form{
+    display:flex;
     align-items: center;
    justify-content:center;
 }
@@ -255,7 +256,7 @@ h3{
 }
 form{
     position: absolute;
-    bottom:0px;
+    bottom:50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,6 +298,7 @@ h3{
     justify-content: space-evenly;
 }
 .form{
+    
     min-height:150vh}
 #submit{
     margin-top: 0%;
