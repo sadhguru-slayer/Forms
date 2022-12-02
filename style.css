@@ -228,13 +228,13 @@ h3{
 }
 
 
-@media (max-height:775px)(min-width:780px){
+@media (max-height:775px),(min-width:780px){
 .form{
     align-items: center;
 }
 .box{
     display: flex;
-    min-height:110vh;
+    min-height:150vh;
 }
 
 .box::before {
