@@ -228,7 +228,7 @@ h3{
 }
 
 
-@media (min-width:1540px),(max-height:795px){
+@media (min-width:1200px){
 .form{
     align-items: center;
    justify-content:center;
