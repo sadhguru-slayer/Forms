@@ -1,314 +1,110 @@
-* {
-    font-family: 'Cinzel', serif;
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'El Messiri', sans-serif;
-    margin: 0%;
-    padding: 0%;
+*{
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease-in-out ;
+    transition-delay: 0ms;
 }
-
-/* ---------------------------------------------------------------------------------------- */
-/* --------THIS SECTION IS USED FOR THE MOVING AND GLOWING BORDER------------------  */
-.box {
-    position: relative;
-    width: 100%;
-    max-height: 160vh;
-min-height:110vh;
-    background-color: rgb(33, 32, 32);
-    overflow: hidden;
+body{
+    height:100vh;
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
-.box::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -40%;
-    width: 80rem;
-    height: 80rem;
-    border-radius: 40rem;
-    background: linear-gradient(0deg, transparent, rgb(117, 64, 230), rgb(255, 0, 140), aqua);
-    transform-origin: bottom right;
-    animation: light 8s linear infinite;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-}
-
-.box::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -40%;
-    width: 80rem;
-    height: 80rem;
-    border-radius: 40rem;
-    background: linear-gradient(0deg, transparent, white, rgb(0, 153, 255), aqua,red);
-    transform-origin: bottom right;
-    animation: light 8s linear infinite;
-    animation-delay: -4s;
-    filter: blur(12px);
-    -webkit-filter: blur(12px);
-}
-/* ----------THIS SECTION FOR THE ANIMATION OF CIRCLE FOR THE COLOR BORDER-------- */
-@keyframes light {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-/* ------------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------------- */
-
-.form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    inset: 3px;
-    background: linear-gradient(0deg, rgb(36, 34, 34), rgba(17, 4, 40, 0.999));
-    z-index: 1;
-    border-radius: 10px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 400px;
-    min-height: 450px;
-    max-height: 550px;
-    max-width: 500px;
-    background: rgb(36, 35, 35, 0.4);
-    border-radius: 8px;
-    border: thin violet;
-    box-shadow: inset -2px -2px 9px rgb(117, 64, 230, 0.5),
-        inset 3px 3px 6px rgb(238, 129, 238, 0.4),
-        2px 2px 20px 1px rgba(186, 127, 253, 0.1);
-    padding:2%;
-
-}
-.a{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0%;
-    
-}
-
-.formdesign {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-h3 {
-    position: absolute;
-    pointer-events: none;
-    transition: 0.5s ease-in-out;
-    color: #dddddd;
-    border-radius: 8px;
-    background-color:#191126;
-    z-index: 4;
-    font-size: medium;
-    padding: 0px 7px;
-}
-h2{
-    color: aliceblue;
-    font-size: larger;
-}
-
-input {
-    border: none;
-    outline: none;
-    font-weight: bolder;
-    font-size: medium;
-    margin-top: 12px;
-    width: 300px;
-    height: 2px;
-    color: rgb(62, 62, 62);
-    background: rgb(238, 129, 238);
-    z-index: 3;
-    border-radius:10px;
+.main{
+    width: 54rem;
     transition: 0.5s;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 2px 2px 12px rgb(37, 37, 37),
+               -2px -2px 12px rgb(38, 38, 38);
 }
-
-#submit {
-    width: 200px;
-    height: 30px;
-    background-color: rgb(184, 129, 227);
-    color: black;
-    box-shadow: none;
-    border: none;
-    font-size: medium;
+.heading{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.inputs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+input{
+    padding:6px;
+    margin: 12px;
     border-radius: 4px;
-    box-shadow: 1px 1px 1px rgb(58, 31, 58),
-        inset -1px -1px 2px rgb(58, 31, 58);
-    margin-top: 25px;
+    border:solid black 1px;
+    outline: 1px;
+    text-align: center;
 }
-
-#submit:hover {
-    background-color: rgb(95, 53, 126);
-    color: aliceblue;
-    transition: 0.5s;
-    box-shadow: inset 2px 2px 4px rgb(216, 185, 216);
+input:valid,input:focus,input:active{
+    border: solid rgb(91, 46, 46) 1.8px;
+    box-shadow:0.5px 0.5px 4px rgb(92, 77, 50);
 }
-
-.errorform {
-    color: antiquewhite;
-    display: block;
-    transform: translateY(12px);
-}
-.formdesign input:valid~h3,
-.formdesign input:focus~h3,
-.formdesign input:active~h3 {
-    color: rgb(238, 129, 238, 0.87);
-    background: none;
-    box-shadow: none;
-    font-size: 15px;
-    transform: translateY(-10px);
-}
-.formdesign input:valid,
-.formdesign input:focus {
-    box-shadow: inset 2px 2px 3px rgb(58, 31, 58);
-    padding: 6px;
-    height: 20px;
-}
-
-/* -------MEDIAQUIERIES STARTS FROM HERE FOR RESPONSIVENESS --------------*/
-@media (max-width:500px){
-.box {
-    background-color: black;
-    
-}
-.form{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-}
-
-.box::before {
-    top: -10%;
-    right: 50%;
-    height:30rem;
-    width: 30rem;
-    border-radius: 15rem;
-}
-
-.box::after {
-    top: -10%;
-    right: 50rem;
-    width: 30rem;
-    height: 30rem;
-    border-radius: 2rem;
-}
-form{
-position:absolute;
-top:50px;
-    min-width: 330px;
-    min-height:300px;
-    max-height:600px;
-    max-width: 400px;
-    padding: 10px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-input{
-    width: 250px;
-    margin-top: 0px auto;
-}
-h3{
-    padding: 0px 4px;
-}
-}
-
-
-@media (min-width:700px){
-.form{
-    display:flex;
-    align-items: center;
-   justify-content:center;
-}
-.box{
-    display: flex;
-    min-height:150vh;
-}
-
-.box::before {
-    top: -10%;
-    right: 50%;
-    height:30rem;
-    width: 30rem;
-    border-radius: 15rem;
-}
-
-.box::after {
-    top: -10%;
-    right: 50rem;
-    width: 30rem;
-    height: 30rem;
-    border-radius: 2rem;
-}
-form{
-    position: absolute;
-    bottom:50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 650px;
-    min-width: 600px;
-    max-height:390px;
-    min-height: 200px;
-    padding: 0ch;
-    padding: 30px;
-    padding-bottom: 10px;
-}
-.a{
-    min-height: 200px;
-    display: grid;
-    grid-template-columns: repeat(2,220px);
-    grid-column-gap: 5rem;
-    grid-row-gap: 0rem;
-    max-height:250px;
-    padding-bottom: 0ch;
-}
-input{
-    min-width: 200px;
-    max-width: 220px;
-    max-height: 20px;
-}
-h3{
-    padding: 0px 4px;
-}
-.formdesign{
+button{
+    padding:1px;
     margin: 0%;
+    position: relative;
+    bottom: 24px;
+    right: 12px;
+    height: 20px;
+    width: 20px;
+    border-radius:50%;
+    animation-name: togglel;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    background-color: rgb(34, 34, 34);
+    border: solid white 1.5px;
 }
-#username{
-    grid-column-start:1;
-    grid-column-end: 4;
-    min-width: 100%;
+#obutton{
+    margin: 2px;
+    padding: 0%;
+    width:40px;
+    height: 20px;
+    border-radius: 12px;
+    background-color: white;
+    border: solid rgb(180,180,180) 2px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(78, 78, 78),
+               -2px -2px 5px rgb(78, 78, 78);
 }
-.btt{
-    min-height: 50px;
-    justify-content: space-evenly;
+#button.active{
+    border: solid black 2px;
+    animation-name: toggled;
+    position: relative;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-direction: normal;
 }
-.form{
-    
-    min-height:150vh}
-#submit{
-    margin-top: 0%;
-    margin-bottom: 25px;
+#obutton.active{
+    border: solid rgb(180, 180, 180) 2px;
 }
+@keyframes toggled {
+    0% {
+        left: -10px;
+    }
+    50%{
+        left:11px;
+    }
+    100%{
+        left: -10px;
+    }
 }
-input::-webkit-outer-spin-button,
-
-      input::-webkit-inner-spin-button {
-
-        display: none;
-
-      }
+@keyframes togglel {
+    0% {
+        left: -10px;
+    }
+    50%{
+        left:11px
+    }
+    100%{
+        left:-10px;
+    }
+}
