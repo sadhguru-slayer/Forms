@@ -228,7 +228,7 @@ h3{
 }
 
 
-@media (min-width:700px),(max-height:605){
+@media (min-width:700px){
 .form{
     display:flex;
     align-items: center;
